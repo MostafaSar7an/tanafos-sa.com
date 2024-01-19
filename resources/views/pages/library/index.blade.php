@@ -1,16 +1,16 @@
 @extends('layouts.master')
 @section('css')
     @toastr_css
-@section('title')
-    قائمة الكتب
-@stop
+    @section('title')
+        قائمة الكتب
+    @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
-@section('PageTitle')
-    قائمة الكتب
-@stop
-<!-- breadcrumb -->
+    @section('PageTitle')
+        قائمة الكتب
+    @stop
+    <!-- breadcrumb -->
 @endsection
 @section('content')
     <!-- row -->

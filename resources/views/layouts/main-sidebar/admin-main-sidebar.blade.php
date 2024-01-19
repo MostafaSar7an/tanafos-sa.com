@@ -111,6 +111,30 @@
             </ul>
         </li>
 
+        <!-- Subjects-->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Subjects">
+                <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">المواد الدراسية</span></div>
+                <div class="pull-right"><i class="ti-plus"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="Subjects" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{route('subjects.index')}}">قائمة المواد</a> </li>
+            </ul>
+        </li>
+
+        <!-- library-->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#library-icon">
+                <div class="pull-left"><i class="fas fa-book"></i><span class="right-nav-text">{{trans('main_trans.library')}}</span></div>
+                <div class="pull-right"><i class="ti-plus"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="library-icon" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{route('library.index')}}">قائمة الكتب</a> </li>
+            </ul>
+        </li>
+
         <!-- Accounts-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Accounts-menu">
@@ -140,17 +164,7 @@
             </ul>
         </li>
 
-        <!-- Subjects-->
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Subjects">
-                <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">المواد الدراسية</span></div>
-                <div class="pull-right"><i class="ti-plus"></i></div>
-                <div class="clearfix"></div>
-            </a>
-            <ul id="Subjects" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('subjects.index')}}">قائمة المواد</a> </li>
-            </ul>
-        </li>
+
 
         <!-- Quizzes-->
         <li>
@@ -166,18 +180,6 @@
         </li>
 
 
-        <!-- library-->
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#library-icon">
-                <div class="pull-left"><i class="fas fa-book"></i><span class="right-nav-text">{{trans('main_trans.library')}}</span></div>
-                <div class="pull-right"><i class="ti-plus"></i></div>
-                <div class="clearfix"></div>
-            </a>
-            <ul id="library-icon" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('library.index')}}">قائمة الكتب</a> </li>
-            </ul>
-        </li>
-
 
         <!-- Online classes-->
         <li>
@@ -187,7 +189,7 @@
                 <div class="clearfix"></div>
             </a>
             <ul id="Onlineclasses-icon" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('online_classes.index')}}">حصص اونلاين مع زوم</a> </li>
+                <li> <a href="{{route('online_classes.index')}}">اضافة الحصص</a> </li>
             </ul>
         </li>
 
@@ -202,14 +204,14 @@
         <!-- Users-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Users-icon">
-                <div class="pull-left"><i class="fas fa-users"></i><span class="right-nav-text">{{trans('main_trans.Users')}}</span></div>
+                <div class="pull-left"><i class="fas fa-users"></i><span class="right-nav-text">{{trans('main_trans.soon')}}</span></div>
                 <div class="pull-right"><i class="ti-plus"></i></div>
                 <div class="clearfix"></div>
             </a>
             <ul id="Users-icon" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="fontawesome-icon.html">font Awesome</a> </li>
-                <li> <a href="themify-icons.html">Themify icons</a> </li>
-                <li> <a href="weather-icon.html">Weather icons</a> </li>
+                <li> <a href="fontawesome-icon.html">{{trans('main_trans.soon')}}</a> </li>
+                <li> <a href="themify-icons.html">{{trans('main_trans.soon')}}</a> </li>
+                <li> <a href="weather-icon.html">{{trans('main_trans.soon')}}</a> </li>
             </ul>
         </li>
 

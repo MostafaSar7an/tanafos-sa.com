@@ -8,7 +8,7 @@
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-    استبعاد رسوم{{$student->name}}
+    استبعاد رسوم {{$student->name}}
 @stop
 <!-- breadcrumb -->
 @endsection

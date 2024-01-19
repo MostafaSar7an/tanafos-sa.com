@@ -296,11 +296,16 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                @forelse(\App\Models\Fee_invoice::latest()->take(10)->get() as $section)
+                                                @forelse(\App\Models\Fee_invoice::latest()->take(25)->get() as $section)
                                                     <tr>
                                                         <td>{{$loop->iteration}}</td>
                                                         <td>{{$section->invoice_date}}</td>
-                                                        <td>{{$section->My_classs->Name_Class}}</td>
+                                                        <td>{{$section->student->name}}</td>
+                                                        <td>{{$section->grade->Name}}</td>
+                                                        <td>{{$section->classroom->Name_Class}}</td>
+                                                        <td>{{$student->section->Name_Section}}</td>
+                                                        <td>{{$section->fees->title}}</td>
+                                                        <td>{{$section->amount, 2}}</td>
                                                         <td class="text-success">{{$section->created_at}}</td>
                                                     </tr>
                                                 @empty
@@ -321,7 +326,7 @@
                 </div>
             </div>
 
-            <livewire:calendar />
+{{--            <livewire:calendar />--}}
 
             <!--=================================
  wrapper -->

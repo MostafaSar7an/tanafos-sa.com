@@ -34,7 +34,7 @@ return [
     'library'=>'المكتبة',
     'Onlineclasses'=>'حصص اونلاين',
     'Settings'=>'الاعدادات',
-    'Users'=>'جاري العمل',
+    'soon'=>'جاري العمل',
     'Copyright' => 'جميع الحقوق محفوظة ',
     'Name_Programer' => 'تطوير SARHAN'
 
