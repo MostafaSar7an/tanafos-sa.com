@@ -2,29 +2,28 @@
 header start-->
 <nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <!-- logo -->
-    <div class="text-left navbar-brand-wrapper">
-        <a class="navbar-brand brand-logo" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-dark.png') }}" alt=""></a>
-        <a class="navbar-brand brand-logo-mini" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-icon-dark.png') }}"
-                alt=""></a>
+{{--    <div class="text-left navbar-brand-wrapper">--}}
+{{--        <a class="navbar-brand brand-logo" href="{{ url('/dashboard') }}"><img src="https://i.pinimg.com/564x/88/73/b6/8873b69d82b87dc1d13686795e8f9f58.jpg" alt=""></a>--}}
+{{--        <a class="navbar-brand brand-logo-mini" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-icon-dark.png') }}" alt=""></a>--}}
 
 
-    </div>
+{{--    </div>--}}
     <!-- Top bar left -->
     <ul class="nav navbar-nav mr-auto">
         <li class="nav-item">
             <a id="button-toggle" class="button-toggle-nav inline-block ml-20 pull-left"
                 href="javascript:void(0);"><i class="zmdi zmdi-menu ti-align-right"></i></a>
         </li>
-        <li class="nav-item">
-            <div class="search">
-                <a class="search-btn not_click" href="javascript:void(0);"></a>
-                <div class="search-box not-click">
-                    <input type="text" class="not-click form-control" placeholder="Search" value=""
-                        name="search">
-                    <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
-                </div>
-            </div>
-        </li>
+{{--        <li class="nav-item">--}}
+{{--            <div class="search">--}}
+{{--                <a class="search-btn not_click" href="javascript:void(0);"></a>--}}
+{{--                <div class="search-box not-click">--}}
+{{--                    <input type="text" class="not-click form-control" placeholder="Search" value=""--}}
+{{--                        name="search">--}}
+{{--                    <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </li>--}}
     </ul>
     <!-- top bar right -->
     <ul class="nav navbar-nav ml-auto">
