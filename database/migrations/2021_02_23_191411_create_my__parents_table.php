@@ -15,7 +15,7 @@ class CreateMyParentsTable extends Migration
     {
         Schema::create('my__parents', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
+            $table->string('email', '150')->index();
             $table->string('password');
 
             //Fatherinformation
