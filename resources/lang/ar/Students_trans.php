@@ -16,7 +16,7 @@ return [
     'Student_Edit' => 'تعديل معلومات الطالب',
      'Grade' => 'المرحلة الدراسية',
      'classrooms' => 'الصف الدراسي',
-     'section' => 'القسم',
+     'section' => 'المجموعة',
      'parent' => 'ولي الامر',
      'academic_year' => 'السنة الدراسية',
      'Processes' => 'العمليات',

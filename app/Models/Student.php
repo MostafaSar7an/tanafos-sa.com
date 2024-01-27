@@ -37,7 +37,7 @@ class Student extends Authenticatable
         return $this->belongsTo('App\Models\Classroom', 'Classroom_id');
     }
 
-    // علاقة بين الطلاب الاقسام الدراسية لجلب اسم القسم  في جدول الطلاب
+    // علاقة بين الطلاب الاقسام الدراسية لجلب اسم المجموعة  في جدول الطلاب
 
     public function section()
     {

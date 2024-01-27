@@ -71,7 +71,7 @@
                                                     <span>الصف</span><span>{{$son->classroom->Name_Class}}</span>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <span>القسم</span><span>{{$son->section->Name_Section}}</span>
+                                                    <span>المجموعة</span><span>{{$son->section->Name_Section}}</span>
                                                 </div>
 
                                                 <div class="d-flex justify-content-between">

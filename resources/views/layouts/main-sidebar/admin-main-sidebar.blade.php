@@ -21,7 +21,6 @@
             </a>
             <ul id="Grades-menu" class="collapse" data-parent="#sidebarnav">
                 <li><a href="{{route('Grades.index')}}">{{trans('main_trans.Grades_list')}}</a></li>
-
             </ul>
         </li>
         <!-- classes-->

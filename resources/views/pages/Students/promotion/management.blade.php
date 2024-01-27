@@ -39,11 +39,11 @@
                                             <th class="alert-danger">المرحلة الدراسية السابقة</th>
                                             <th class="alert-danger">السنة الدراسية</th>
                                             <th class="alert-danger">الصف الدراسي السابق</th>
-                                            <th class="alert-danger">القسم الدراسي السابق</th>
+                                            <th class="alert-danger">المجموعة الدراسي السابق</th>
                                             <th class="alert-success">المرحلة الدراسية الحالي</th>
                                             <th class="alert-success">السنة الدراسية الحالية</th>
                                             <th class="alert-success">الصف الدراسي الحالي</th>
-                                            <th class="alert-success">القسم الدراسي الحالي</th>
+                                            <th class="alert-success">المجموعة الدراسي الحالي</th>
                                             <th>{{trans('Students_trans.Processes')}}</th>
                                         </tr>
                                         </thead>

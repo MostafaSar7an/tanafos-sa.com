@@ -28,7 +28,7 @@ class promotion extends Model
         return $this->belongsTo('App\Models\Classroom', 'from_Classroom');
     }
 
-    // علاقة بين الترقيات الاقسام الدراسية لجلب اسم القسم  في جدول الترقيات
+    // علاقة بين الترقيات الاقسام الدراسية لجلب اسم المجموعة  في جدول الترقيات
 
     public function f_section()
     {
@@ -50,7 +50,7 @@ class promotion extends Model
         return $this->belongsTo('App\Models\Classroom', 'to_Classroom');
     }
 
-    // علاقة بين الترقيات الاقسام الدراسية لجلب اسم القسم  في جدول الترقيات
+    // علاقة بين الترقيات الاقسام الدراسية لجلب اسم المجموعة  في جدول الترقيات
 
     public function t_section()
     {
