@@ -37,13 +37,6 @@ class GradeController extends Controller
  try {
           $validated = $request->validated();
           $Grade = new Grade();
-          /*
-          $translations = [
-              'en' => $request->Name_en,
-              'ar' => $request->Name
-          ];
-          $Grade->setTranslations('Name', $translations);
-          */
           $Grade->Name = ['en' => $request->Name_en, 'ar' => $request->Name];
           $Grade->Notes = $request->Notes;
           $Grade->save();

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,8 +25,12 @@ Route::group(['namespace' => 'Auth'], function () {
     Route::post('/login', 'LoginController@login')->name('login');
     Route::get('/logout/{type}', 'LoginController@logout')->name('logout');
 
-
 });
+////==============================Posts============================
+//Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+//Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
+//Route::get('/posts', function (){return 'posts.store';})->name('posts.store');
+//Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 //==============================Translate all pages============================
 Route::group(
     [
@@ -94,6 +100,42 @@ Route::group(
     //==============================subjects============================
     Route::group(['namespace' => 'Subjects'], function () {
         Route::resource('subjects', 'SubjectController');
+    });
+
+    //==============================الأرصدة والبطاقات============================
+    Route::group(['namespace' => 'BalanceAndCards'], function () {
+        //====================شاشة عرض رصيد الطلاب============
+        Route::resource('BalanceAndCards_Students_Show', 'Student_ShowController');
+        //==================شاشة اصدار المنح والمكافأت============
+        Route::resource('Cards_Create', 'Card_CreateController');
+        //===============شاشة استعلامات المنح والمكافأت============
+        Route::resource('Balance_Edite', 'Balance_EditeController');
+        //================شاشة إسقاط المنح والمكافأت=============
+        Route::resource('BalanceAndCards_','Gift_DropController');
+    });
+
+    //==============================المنح والمكافأت============================
+    Route::group(['namespace' => 'Gifts'], function () {
+        //====================شاشة بنود المنح والمكافأت============
+        Route::resource('Gifts_Item', 'Gift_ItemController');
+        //==================شاشة اصدار المنح والمكافأت============
+        Route::resource('Gifts_Create', 'Gift_CreateController');
+        //===============شاشة استعلامات المنح والمكافأت============
+        Route::resource('Gifts_Inq', 'Gift_InqController');
+        //================شاشة إسقاط المنح والمكافأت=============
+        Route::resource('Gifts_Drop','Gift_DropController');
+    });
+
+    //==============================المخالفات============================
+    Route::group(['namespace' => 'Infringements'], function () {
+        //====================شاشة بنود المخالفات============
+        Route::resource('Infringements_item', 'Infringement_itemController');
+        //==================شاشة اصدار المخالفات============
+        Route::resource('Infringements_item_Create', 'Infringement_CreateController');
+        //===============شاشة استعلامات المخالفات============
+        Route::resource('Infringements_Inq', 'Infringement_InqController');
+        //================شاشة إسقاط المخالفات =============
+        Route::resource('Infringements_Drop','Infringement_DropController');
     });
 
     //==============================Quizzes============================
