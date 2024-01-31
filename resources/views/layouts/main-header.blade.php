@@ -2,12 +2,10 @@
 header start-->
 <nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <!-- logo -->
-{{--    <div class="text-left navbar-brand-wrapper">--}}
-{{--        <a class="navbar-brand brand-logo" href="{{ url('/dashboard') }}"><img src="https://i.pinimg.com/564x/88/73/b6/8873b69d82b87dc1d13686795e8f9f58.jpg" alt=""></a>--}}
-{{--        <a class="navbar-brand brand-logo-mini" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-icon-dark.png') }}" alt=""></a>--}}
-
-
-{{--    </div>--}}
+    <div class="text-left navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-dark.png') }}" alt=""></a>
+        <a class="navbar-brand brand-logo-mini" href="{{ url('/dashboard') }}"><img src="{{ URL::asset('assets/images/logo-icon-dark.png') }}" alt=""></a>
+    </div>
     <!-- Top bar left -->
     <ul class="nav navbar-nav mr-auto">
         <li class="nav-item">

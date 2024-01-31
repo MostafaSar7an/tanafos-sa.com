@@ -110,6 +110,55 @@
             </ul>
         </li>
 
+        <!-- BalanceAndCards -->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#BalanceAndCards-menu">
+                <div class="pull-left"><i class="fas fa-credit-card"></i>
+                    <span class="right-nav-text" style="font-size: 12px"> الأرصدة وبطاقات الشحن </span><span class="bg-success" style="border-radius: 10px;padding:0px 2px;font-size: 10px">جديد</span></div>
+                <div class="pull-right"><i class="ti-plus" style=""></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="BalanceAndCards-menu" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{url('BalanceAndCards_Students_Show')}}">عرض رصيد الطالب</a> </li>
+                <li> <a href="{{url('Cards_Create')}}">اصدار البطاقات</a> </li>
+                <li> <a href="{{url('Balance_Edite')}}">التحكم في رصيد الطالب</a> </li>
+                <li> <a href="{{url('Gifts_Drop')}}">التحكم في رصيد المجموعات</a> </li>
+            </ul>
+        </li>
+
+        <!-- Gifts -->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Gift-menu">
+                <div class="pull-left"><i class="fas fa-gift"></i>
+                    <span class="right-nav-text"> المنح والمكافأت </span><span class="bg-success" style="border-radius: 10px;margin-left: 4.5px;padding:0px 2px;font-size: 10px">جديد</span></div>
+                <div class="pull-right"><i class="ti-plus"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="Gift-menu" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{url('Gifts_Item')}}">قائمة بنود المنح والمكافأت</a> </li>
+                <li> <a href="{{url('Gifts_Create')}}">أصدار المنح والمكافأت</a> </li>
+                <li> <a href="{{url('Gifts_Inq')}}">أستعلامات المنح والمكافأت</a> </li>
+                <li> <a href="{{url('Gifts_Drop')}}">المنح والمكافأت المسقطة</a> </li>
+            </ul>
+        </li>
+
+
+        <!-- Infringements -->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Infringements-menu">
+                <div class="pull-left"><i class="fas fa-warning"></i>
+                        <span class="right-nav-text"> المخالفات </span><span class="bg-success" style="border-radius: 10px;padding:0px 2px;margin-left: auto;font-size: 10px">جديد</span></div>
+                <div class="pull-right"><i class="ti-plus"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="Infringements-menu" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{url('Infringements_item')}}">قائمة بنود المخالفات</a> </li>
+                <li> <a href="{{url('Infringements_item_Create')}}">أصدار المخالفات</a> </li>
+                <li> <a href="{{url('Infringements_Inq')}}">أستعلامات المخالفات</a> </li>
+                <li> <a href="{{url('Infringements_Drop')}}">المخالفات المسقطة</a> </li>
+            </ul>
+        </li>
+
         <!-- Subjects-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Subjects">

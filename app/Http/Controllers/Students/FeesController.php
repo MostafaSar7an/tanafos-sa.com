@@ -7,7 +7,7 @@ use App\Http\Requests\StoreFeesRequest;
 use App\Repository\FeesRepositoryInterface;
 use Illuminate\Http\Request;
 
-class FeesController extends Controller
+class   FeesController extends Controller
 {
     protected $Fees;
 

@@ -19,9 +19,7 @@
         <div class="card card-statistics h-100">
             <div class="card-body">
 
-                <livewire:counter/>
-
-
+                <h1>We are Test View blade.php</h1>
 
             </div>
         </div>
